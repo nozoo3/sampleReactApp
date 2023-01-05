@@ -8,7 +8,7 @@ import MuiAppBar, { AppBarProps as MuiAppBarProps } from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
-import IconButton from '@mui/material/IconButton';
+import { ButtonColorType, IconButton } from '@/components/ui/Button';
 import Badge from '@mui/material/Badge';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
@@ -103,7 +103,7 @@ export const MainLayout: React.FC<MainLayoutProps> = ({ children }: MainLayoutPr
           >
             <IconButton
               edge="start"
-              color="inherit"
+              color={ButtonColorType.inherit}
               aria-label="open drawer"
               onClick={toggleDrawer}
               sx={{
@@ -116,7 +116,7 @@ export const MainLayout: React.FC<MainLayoutProps> = ({ children }: MainLayoutPr
             <Typography component="h1" variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
               Dashboard
             </Typography>
-            <IconButton color="inherit">
+            <IconButton color={ButtonColorType.inherit}>
               <Badge badgeContent={4} color="secondary">
                 <NotificationsIcon />
               </Badge>
