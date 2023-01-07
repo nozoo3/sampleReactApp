@@ -4,7 +4,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: React_Sample_App
     tty: true
     environment:
       - NODE_ENV=development

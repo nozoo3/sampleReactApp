@@ -1,6 +1,10 @@
 ## Todo For Starting App
 
-### `docker-compose build —no-cache`
+### `yarn install`
+
+Install Dependencies
+
+### `docker-compose build --no-cache`
 
 Build Images
 
