@@ -1,0 +1,4 @@
+FROM node:18.4.0-alpine
+ENV NODE_VERSION 18.4.0
+WORKDIR /usr/src/app/
+EXPOSE 3000
